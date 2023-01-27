@@ -1,0 +1,29 @@
+.MainHomeContainer{
+background-color:aliceblue;
+height: 100vh;
+}
+.Homebtndiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 310px 0px;
+}
+.Homebtngrp{
+    display: flex;
+    gap: 30px;
+   
+}
+.btn{
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#fbb6ce;
+    color: #1a202c;
+    font-weight: 600;
+    font-size:1rem ;
+    transition: all 1s;
+}
+.btn:hover {
+    background-color: #F687B3;
+}
