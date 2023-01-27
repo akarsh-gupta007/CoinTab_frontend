@@ -5,7 +5,7 @@ import UserProfile from './UserProfile'
 
 
 
-const Mainroutes = () => {
+const Routing = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />}></Route>
@@ -15,4 +15,4 @@ const Mainroutes = () => {
   )
 }
 
-export default Mainroutes
+export default Routing

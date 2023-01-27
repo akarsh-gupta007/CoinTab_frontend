@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Style.css";
 
-const EmptyCard = () => {
+const NodataComponent = () => {
   return (
   <>
     <div className='Container_nodata' maxW='sm' m="auto">
@@ -20,4 +20,4 @@ const EmptyCard = () => {
   )
 }
 
-export default EmptyCard
+export default NodataComponent;

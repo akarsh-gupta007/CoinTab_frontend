@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import UserDetailsTAble from "../Components/UserDetailsTAble";
 import FlexComponent from "../Components/FlexComponent";
-import EmptyCard from "../Components/EmptyCard";
+import NodataComponent from "../Components/NodataComponent";
 import Pagenation from "../Components/Pagenation";
 
 const UserProfile = () => {
@@ -17,7 +17,7 @@ console.log(data,"data")
 console.log(dataall,"dataall")
 
   const fetchUsers = () => {
-    fetch(`http://localhost:8080/?limit=10&page=${page}&filter=${filter}`)
+    fetch(`http://localhost:8000/?limit=10&page=${page}&filter=${filter}`)
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -29,7 +29,7 @@ console.log(dataall,"dataall")
 
 
   const fetchUsersall = () => {
-    fetch(`http://localhost:8080/alldata?filter=${filter}`)
+    fetch(`http://localhost:8000/alldata?filter=${filter}`)
       .then((response) => response.json())
       .then((data) => {
 
@@ -51,7 +51,7 @@ console.log(dataall,"dataall")
       <FlexComponent filter={filter} setFilter={setFilter} setPage={setPage} />
 
       {
-        data.length == 0 ? <><EmptyCard /></>
+        data.length == 0 ? <><NodataComponent /></>
           : <>
             <UserDetailsTAble page={page} setPage={setPage} data={data} number={Math.ceil(dataall.length / 10)} />
             <Pagenation currentpage={page} handlePage={setPage} totalPages={Math.ceil(dataall.length / 10)} />

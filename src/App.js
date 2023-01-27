@@ -1,11 +1,11 @@
 import './App.css';
 
-import Mainroutes from './Pages/Mainroutes';
+import Routing from './Pages/Routing';
 
 function App() {
   return (
    <div className='App_container'>
-    <Mainroutes />
+    <Routing />
    </div>
   );
 }
