@@ -13,8 +13,9 @@ const UserProfile = () => {
   const [filter, setFilter] = useState("");
   const [dataall, setDataall] = useState([]);
 
+console.log(data,"data")
+console.log(dataall,"dataall")
 
-  
   const fetchUsers = () => {
     fetch(`http://localhost:8080/?limit=10&page=${page}&filter=${filter}`)
       .then((response) => response.json())
@@ -23,6 +24,9 @@ const UserProfile = () => {
         setData(data);
       });
   };
+
+
+
 
 
   const fetchUsersall = () => {
