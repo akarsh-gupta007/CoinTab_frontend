@@ -19,11 +19,11 @@ export default function UserDetailsTAble({ page, setPage, data, number }) {
                     <TableHead>
                         <TableRow>
                             <TableCell>AVTAR</TableCell>
-                            <TableCell align="right">NAME</TableCell>
-                            <TableCell align="right">LOCATION</TableCell>
-                            <TableCell align="right">GENDER</TableCell>
-                            <TableCell align="right">MAIL</TableCell>
-                            <TableCell align="right">PHONE</TableCell>
+                            <TableCell >NAME</TableCell>
+                            <TableCell >LOCATION</TableCell>
+                            <TableCell >GENDER</TableCell>
+                            <TableCell >MAIL</TableCell>
+                            <TableCell >PHONE</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

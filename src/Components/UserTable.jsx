@@ -1,25 +1,26 @@
 import React from 'react';
 // import UserTable from './UserTable'
-import "./Style.css"
-
+import "./Style.css";
+import TableCell from '@mui/material/TableCell';
+import TableRow from '@mui/material/TableRow';
 const UserTable = ({ data }) => {
 
   return (
-    <tr>
-      <td>
+    <TableRow>
+      <TableCell>
         <img  src={data.picture.medium} />
 
-      </td>
-      <td>{data.name.first}</td>
-      <td>{data.location.country}</td>
-      <td>{data.gender}</td>
-      <td>{data.email}</td>
-      <td>{data.phone}</td>
+      </TableCell>
+      <TableCell>{data.name.first}</TableCell>
+      <TableCell>{data.location.country}</TableCell>
+      <TableCell>{data.gender}</TableCell>
+      <TableCell>{data.email}</TableCell>
+      <TableCell>{data.phone}</TableCell>
 
 
 
 
-    </tr>
+    </TableRow>
   )
 }
 

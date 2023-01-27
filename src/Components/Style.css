@@ -128,9 +128,12 @@ select {
     color: white;
 }
 
-tr,td{
+/* tr,td{
     padding:10px ;
-}
+} */
 img{
     border-radius: 50%;
 }
+/* th{
+    color: #175dea;
+} */

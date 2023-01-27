@@ -20,7 +20,6 @@ console.log(dataall,"dataall")
     fetch(`http://localhost:8080/?limit=10&page=${page}&filter=${filter}`)
       .then((response) => response.json())
       .then((data) => {
-
         setData(data);
       });
   };
